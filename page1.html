@@ -9,6 +9,76 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
+<style>
+	.button {
+  background-color: white;
+  border: 2px solid #555555;
+  border-radius: 8px;
+  color: black;
+  padding: 12px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+   margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+    .button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+    .button1:hover {
+  background-color: #555555;
+  color: white;
+}
+
+    .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+    .container:hover .image {
+  opacity: 0.3;
+}
+
+    .container:hover .middle {
+  opacity: 1;
+}
+
+    .text {
+  font-family: courier;
+  color: #756272;
+  font-size: 16px;
+  padding: 28px 28px;
+}
+
+    a:link {
+  color: #756272;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+    a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+</style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -26,48 +96,80 @@
           Works <span class="sr-only">(current)</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Glitch</a>
-          <a class="dropdown-item" href="#">Meme Mashup</a>
-          <a class="dropdown-item" href="#">Minecraft Sculpture</a>
-		  <a class="dropdown-item" href="#">3D Print</a>
-		  <a class="dropdown-item" href="#">Net Art</a>
+          <a class="dropdown-item" href="page2.html">Glitch</a>
+          <a class="dropdown-item" href="page3.html">Meme Mashup</a>
+          <a class="dropdown-item" href="page4.html">Minecraft Sculpture</a>
+		  <a class="dropdown-item" href="page5.html">3D Print</a>
+		  <a class="dropdown-item" href="page6.html">Net Art</a>
         </div>
       </li>
 	  <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="page7.html">Contact</a>
       </li> 
 	  <li class="nav-item">
-        <a class="nav-link" href="#">Weebly</a>
+        <a class="nav-link" href="https://aleishamarie.weebly.com/">Weebly</a>
       </li>
     </ul>
   </div>
 </nav>
 	
-<div class="jumbotron text-center">
+<div class="jumbotron text-center" style="background-image: url(images/pattern1.jpg);
+     background-size:25%; background-repeat: repeat;">
   
-  <h1>MIX IT &amp; MIX IT.</h1>
-  <p>digital media art portfolio</p> 
+  <h1 style="color: #d1a1ce;">My Works</h1>
 </div>
   
-<div class="container">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Favorite works</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Meet the Designer</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-4">
-      <h3>Weebly Portfolio</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-  </div>
+<div class="container" align="center">
+<div class="row">
+    <div class="col-sm-4" style="padding: 20px;">
+	<a href="page2.html">
+		<img class="image" src="images/couple.jpg" alt="Glitch Art" style="width:75%">
+	</a>
+	<div class="middle">
+		<div class="text"> <a href="page2.html">Glitch Art<a/> </div>
+	</div>
+	</div>
+	
+	<div class="col-sm-4" style="padding: 20px;">
+	<a href="page3.html">
+		<img class="image" src="images/hey-sisters.jpg" alt="Meme Mashup" style="width:75%">
+	</a>
+	<div class="middle">
+		<div class="text"> <a href="page3.html"> Meme Mashup </a></div>
+	</div>
+	</div>
+	
+	<div class="col-sm-4" style="padding: 20px;">
+	<a href="page4.html">
+		<img class="image" src="images/kirby-1.png" alt="MineCraft" style="width:75%">
+	</a>
+	<div class="middle">
+		<div class="text"> <a href="page4.html"> Minecraft Sculpture </a></div>
+	</div>
+	</div>
+<p></p>	
+<div class="row">
+    <div class="col-sm-4" style="padding: 20px;">
+	<a href="page5.html">
+		<img class="image" src="images/IMG_5199.jpg" alt="3d print" style="width:75%">
+	</a>
+	<div class="middle">
+		<div class="text"><a href="page5.html"> 3D Print </a></div>
+	</div>
+	</div>
+	
+	<div class="col-sm-4" style="padding: 20px;">
+	<a href="page6.html">
+		<img class="image" src="images/net1.png" alt="Net Art" style="width:80%">
+	</a>
+	<div class="middle">
+		<div class="text"><a href="page6.html"> Net Art </a></div>
+	</div>
+	</div>
+	
 </div>
+
+
 
 </body>
 </html>
