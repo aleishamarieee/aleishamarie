@@ -4,12 +4,63 @@
   <title>Aleisha's Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 11px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
 	.button {
   background-color: white;
   border: 2px solid #555555;
@@ -48,41 +99,61 @@
   text-align: center;
 }
 
-    .container:hover .image {
-  opacity: 0.3;
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: #d1a1ce;
 }
+
+/* Centered text */
+.centered {
+  font-family: 'Baloo';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 10px #DE2892;
+}
+}
+
+ /*   .container:hover .image {
+  opacity: 0.3;
+}*/
 
     .container:hover .middle {
   opacity: 1;
 }
 
     .text {
-  font-family: courier;
-  color: #756272;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #C870D1;
   font-size: 16px;
   padding: 28px 28px;
 }
 
-    a:link {
+  a:link {
   color: #756272;
   text-decoration: none;
 }
 
-a:visited {
-  color: black;
+  a:visited {
+  color: white;
   text-decoration: none;
 }
 
     a:hover {
-  color: white;
+  color: #C870D1;
   text-decoration: none;
+  opacity: 0.5;
 }
+
 
 </style>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html">aleisha marie.</a>
+  <a class="navbar-brand" href="index.html" style="font-family: 'Baloo';">aleisha marie.</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -101,6 +172,9 @@ a:visited {
           <a class="dropdown-item" href="page4.html">Minecraft Sculpture</a>
 		  <a class="dropdown-item" href="page5.html">3D Print</a>
 		  <a class="dropdown-item" href="page6.html">Net Art</a>
+		  <a class="dropdown-item" href="page8.html">Processing</a>
+		  <a class="dropdown-item" href="page9.html">Final Project</a>
+
         </div>
       </li>
 	  <li class="nav-item">
@@ -116,60 +190,87 @@ a:visited {
 <div class="jumbotron text-center" style="background-image: url(images/pattern1.jpg);
      background-size:25%; background-repeat: repeat;">
   
-  <h1 style="color: #d1a1ce;">My Works</h1>
+  <h1 style="color: #d1a1ce;font-family: 'Baloo';">My Works</h1>
  
 </div>
   
-<div class="container" align="center">
-<div class="row">
-    <div class="col-sm-4" style="padding: 20px;">
-	<a href="page2.html">
-		<img class="image" src="images/couple.jpg" alt="Glitch Art" style="width:75%">
-	</a>
-	<div class="middle">
-		<div class="text"> <a href="page2.html">Glitch Art<a/> </div>
-	</div>
-	</div>
-	
-	<div class="col-sm-4" style="padding: 20px;">
-	<a href="page3.html">
-		<img class="image" src="images/hey-sisters.jpg" alt="Meme Mashup" style="width:75%">
-	</a>
-	<div class="middle">
-		<div class="text"> <a href="page3.html"> Meme Mashup </a></div>
-	</div>
-	</div>
-	
-	<div class="col-sm-4" style="padding: 20px;">
-	<a href="page4.html">
-		<img class="image" src="images/kirby-1.png" alt="MineCraft" style="width:75%">
-	</a>
-	<div class="middle">
-		<div class="text"> <a href="page4.html"> Minecraft Sculpture </a></div>
-	</div>
-	</div>
-<p></p>	
-<div class="row">
-    <div class="col-sm-4" style="padding: 20px;">
-	<a href="page5.html">
-		<img class="image" src="images/IMG_5199.jpg" alt="3d print" style="width:75%">
-	</a>
-	<div class="middle">
-		<div class="text"><a href="page5.html"> 3D Print </a></div>
-	</div>
-	</div>
-	
-	<div class="col-sm-4" style="padding: 20px;">
-	<a href="page6.html">
-		<img class="image" src="images/net1.png" alt="Net Art" style="width:80%">
-	</a>
-	<div class="middle">
-		<div class="text"><a href="page6.html"> Net Art </a></div>
-	</div>
-	</div>
-	
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <p>Change the grid view below.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn active" onclick="two()">2</button>
 </div>
 
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+  	<div class="container">
+    <a href="page2.html">
+    <img src="images/couple.jpg" style="width:100%">
+    <div class="centered"> <p>GLITCH ART</p> </div></a></div>
+    <div class="container">
+    <a href="page3.html">
+    <img src="images/hey-sisters.jpg" style="width:100%">
+    <div class="centered"> MEME MASH-UP </div></a></div>
+    <div class="container">
+    <a href="page4.html">
+    <img src="images/kirby-1.png" style="width:100%">
+    <div class="centered"> MINECRAFT </div></a></div>
+    <div class="container">
+    <a href="page5.html">
+    <img src="images/IMG_5199.jpg" style="width:100%">
+    <div class="centered"> 3D PRINT</div></a></div>
+  </div>
+  <div class="column">
+  	<div class="container">
+    <a href="page6.html">
+    <img src="images/net1.png" style="width:100%">
+    <div class="centered"> NET ART </div></a></div>
+    <div class="container">
+    <a href="page8.html">
+    <img src="images/self-portrait.png" style="width:100%">
+    <div class="centered"> PROCESSING </div></a></div>
+    <div class="container">
+    <a href="page9.html">
+    <img src="images/IMG_5202.jpg" style="width:100%">
+    <div class="centered"> FINAL PROJECT </div></a></div>
+  </div>  
+</div>
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
 
 
 </body>
